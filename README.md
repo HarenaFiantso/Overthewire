@@ -5,19 +5,20 @@ HOST: [bandit.labs.overthewire.org](bandit.labs.overthewire.org)
 PORT: 2220  
 USERNAME: bandit<level>  
 START PASSWORD: bandit0  
-###LOGIN WITH SSH
+
+#LOGIN WITH SSH
 ```shell
 ssh bandit<level>@bandit.labs.overthewire.org -p 2220
 ```
 
-#=== level 0 -> 1 ===#
-```
+#LEVEL 0 -> 1
+```shell
 cat readme
 ```
 **PASSWORD:**  
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-#=== level 1 -> 2 ===#
+#LEVEL 1 -> 2 ===#
 ```
 cat ./-
 ```
