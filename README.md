@@ -25,23 +25,23 @@ cat ./-
 **PASSWORD:**  
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-### level 2 - 3 
-```
-cat "spaces in this filename"
+### LEVEL 2 - 3 
 ```shell
+cat "spaces in this filename"
+```
 **PASSWORD:**  
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
 ### LEVEL 3 - 4
-```
+```shell
 cat ./inhere/.hidden
 ```
 **PASSWORD:**  
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
 
 
-#=== level 4 -> 5 ===#
-```
+### LEVEL 4 - 5
+```shell
 file ./-file*
 cat ./-file07
 ```
