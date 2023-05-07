@@ -48,31 +48,31 @@ cat ./-file07
 **PASSWORD:**  
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
-#=== level 5 -> 6 ===#
-```
+### LEVEL 5 -> 6
+```shell
 file ./ -size 1033c
 cat ./maybehere07/.file2
 ```
 **PASSWORD:**  
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
-#=== level 6 -> 7 ===#
-```
+### LEVEL 6 -> 7
+```shell
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 cat /var/lib/dpkg/info/bandit7.password
 ```
 **PASSWORD:**   
 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
-#=== level 7 -> 8 ===#
-```
+### LEVEL 7 -> 8
+```shell
 grep 'millionth' data.txt
 ```
 **PASSWORD:**  
 cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
-#=== level 8 -> 9 ===#
-```
+### LEVEL 8 -> 9
+```shell
 sort data.txt | uniq -u 
 ```
 **PASSWORD:**  
