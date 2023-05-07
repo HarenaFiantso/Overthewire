@@ -238,7 +238,7 @@ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
 **PASSWORD:**  
 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
-### level 23 - 24
+### LEVEL 23 - 24
 ```shell
 cd /etc/cron.d
 cat cronjob_bandit24
