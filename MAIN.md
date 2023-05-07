@@ -263,7 +263,7 @@ cd /tmp
 touch t.sh
 nano t.sh
 ```
-####t.sh
+#### t.sh
 ```
 touch pin.txt
 cp /dev/null pin.txt
