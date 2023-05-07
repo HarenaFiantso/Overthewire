@@ -101,12 +101,12 @@ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 
 ### LEVEL 12 - 13 
 ```shell
-mkdir /tmp/benshlom
-xxd -r data.txt > /tmp/benshlom/data.txt
-cd /tmp/benshlom
+mkdir /tmp/fiantsoharena
+xxd -r data.txt > /tmp/fiantsoharena/data.txt
+cd /tmp/fiantsoharena
 zcat data.txt | bzcat | zcat | tar xO | tar xO | bzcat | tar xO | zcat
 cd -
-rm -r /tmp/benshlom
+rm -r /tmp/fiantsoharena
 ```
 **PASSWORD:**  
 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
@@ -133,7 +133,7 @@ openssl s_client -connect localhost:30001
 **PASSWORD:**  
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
-### level 16 - 17
+### LEVEL 16 - 17
 ```shell
 nmap -p 31000-32000 -sV localhost
 echo cluFn7wTiGryunymYOu4RcffSxQluehd | openssl s_client -quiet -connect localhost:31790
@@ -171,7 +171,7 @@ vBgsyi/sN3RqRBcGU40fOoZyfAMT8s1m/uYv52O6IgeuZ/ujbjY=
 
 -----END RSA PRIVATE KEY-----
 
-```
+```shell
 touch /tmp/key.key
 nano /tmp/key.key
 cd /tmp
@@ -179,48 +179,47 @@ chmod 600 key.key
 ssh -i key.key bandit17@localhost
 ```
 
-#=== level 17 -> 18 ===#
-```
+### LEVEL 17 - 18
+```shell
 diff passwords.new passwords.old
 <Now login using the password>
 ```
 **PASSWORD:**  
 kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
 
-#=== level 18 -> 19 ===#
-```
+### LEVEL 18 - 19
+```shell
 ssh -T bandit18@localhost
 cat readme
 ```
 **PASSWORD:**  
 IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
 
-#=== level 19 -> 20 ===#
-```
+### LEVEL 19 - 20
+```shell
 ./bandit20-do cat /etc/bandit_pass/bandit20
 ```
 **PASSWORD:**  
 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
 
-#=== level 20 -> 21 ===#
-```
+### LEVEL 20 - 21
+```shell
 tmux
 Ctrl+b c
 ```
-	--- Shell 1:
-	```
-	nc -l 1234 < /etc/bandit_pass/bandit20
-	```
-	--- Shell 2:
-	```
-	./suconnect 1234
-	```
-
+#### Shell 1:
+```
+nc -l 1234 < /etc/bandit_pass/bandit20
+```
+#### Shell 2:
+```
+./suconnect 1234
+```
 **PASSWORD:**  
 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
 
-#=== level 21 -> 22 ===#
-```
+### LEVEL 21 - 22
+```shell
 cd /etc/cron.d
 cat cronjob_bandit22
 cat /usr/bin/cronjob_bandit22.sh
@@ -229,8 +228,8 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 **PASSWORD:**  
 Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI 
 
-#=== level 22 -> 23 ===#
-```
+### LEVEL 22 - 23
+```shell
 cd /etc/cron.d
 cat cronjob_bandit23
 cat /usr/bin/cronjob_bandit23.sh
@@ -239,49 +238,44 @@ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
 **PASSWORD:**  
 jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
 
-#=== level 23 -> 24 ===#
-```
+### level 23 - 24
+```shell
 cd /etc/cron.d
 cat cronjob_bandit24
 cd /var/spool/bandit24
 touch t.sh
 nano t.sh
 ```
-
-	--- t.sh
-	```
-	#!/bin/bash
-	cat /etc/bandit_pass/bandit24 > /tmp/tmp_pass
-	```
-
-	```
-	cat /tmp/tmp_pass
-	```
-	
+#### t.sh
+```
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/tmp_pass
+```
+```
+cat /tmp/tmp_pass
+```
 **PASSWORD:**  
 UoMYTrfrBFHyQXmg6gzctqAwOmw1IohZ
 
-#=== level 24 -> 25 ===#
-```
+### LEVEL 24 - 25 
+```shell
 cd /tmp
 touch t.sh
 nano t.sh
 ```
-
-	--- t.sh
-	```
-	touch pin.txt
-	cp /dev/null pin.txt
-	for i in {0..9}{0..9}{0..9}{0..9}
-	do
-		    echo $(cat /etc/bandit_pass/bandit24) $i >> pin.txt
-	done
-	```
-
-	```
-	cat pin.txt | nc localhost 30002 > answer.txt
-	cat answer.txt
-	```
+####t.sh
+```
+touch pin.txt
+cp /dev/null pin.txt
+for i in {0..9}{0..9}{0..9}{0..9}
+do
+	echo $(cat /etc/bandit_pass/bandit24) $i >> pin.txt
+done
+```
+```
+cat pin.txt | nc localhost 30002 > answer.txt
+cat answer.txt
+```
 
 **PASSWORD:**  
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
