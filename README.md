@@ -280,8 +280,8 @@ cat answer.txt
 **PASSWORD:**  
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
-#=== level 25 -> 26 ===#
-```
+### level 25 - 26 
+```shell
 ssh -i bandit26.sshkey bandit26@localhost
 v # Open vim from more
 :e /etc/bandit_pass/bandit26 # open password
@@ -289,8 +289,8 @@ v # Open vim from more
 **PASSWORD:**  
 5czgV9L3Xx8JPOyRbXh6lQbmIOWvPT6Z
 
-#=== level 26 -> 27 ===#
-```
+### LEVEL 26 - 27 
+```shell
 v # open vim
 :set shell=/bin/bash # set shell to normal shell
 :shell # return to shell
@@ -299,8 +299,8 @@ v # open vim
 **PASSWORD:**  
 3ba3118a22e93127a4ed485be72ef5ea
 
-#=== level 27 -> 28 ===#
-```
+### LEVEL 27 - 28 
+```shell
 cd /tmp/
 git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
 cd repo
@@ -309,8 +309,8 @@ cat README
 **PASSWORD:**  
 0ef186ac70e04ea33b4c1853d2526fa2
 
-#=== level 28 -> 29 ===#
-```
+### LEVEL 28 - 29 
+```shell
 cd /tmp/
 git clone ssh://bandit27-git@localhost/home/bandit27-git/repo
 cd repo
@@ -319,8 +319,8 @@ git log -p
 **PASSWORD:**  
 bbc96594b4e001778eee9975372716b2
 
-#=== level 29 -> 30 ===#
-```
+### LEVEL 29 - 30 ===#
+```shell
 cd /tmp
 git clone ssh://bandit29-git@localhost/home/bandit29-git/repo 
 cd repo
