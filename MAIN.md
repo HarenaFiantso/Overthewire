@@ -319,7 +319,7 @@ git log -p
 **PASSWORD:**  
 bbc96594b4e001778eee9975372716b2
 
-### LEVEL 29 - 30 ===#
+### LEVEL 29 - 30 
 ```shell
 cd /tmp
 git clone ssh://bandit29-git@localhost/home/bandit29-git/repo 
