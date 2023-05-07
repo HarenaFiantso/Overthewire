@@ -280,7 +280,7 @@ cat answer.txt
 **PASSWORD:**  
 uNG9O58gUE7snukf3bvZ0rxhtnjzSGzG
 
-### level 25 - 26 
+### LEVEL 25 - 26 
 ```shell
 ssh -i bandit26.sshkey bandit26@localhost
 v # Open vim from more
