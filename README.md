@@ -6,7 +6,7 @@ PORT: 2220
 USERNAME: bandit<level>  
 START PASSWORD: bandit0  
 
-#LOGIN WITH SSH
+# LOGIN WITH SSH
 ```shell
 ssh bandit<level>@bandit.labs.overthewire.org -p 2220
 ```
