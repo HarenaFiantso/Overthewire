@@ -48,7 +48,7 @@ cat ./-file07
 **PASSWORD:**  
 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 
-### LEVEL 5 -> 6
+### LEVEL 5 - 6
 ```shell
 file ./ -size 1033c
 cat ./maybehere07/.file2
@@ -56,7 +56,7 @@ cat ./maybehere07/.file2
 **PASSWORD:**  
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
-### LEVEL 6 -> 7
+### LEVEL 6 - 7
 ```shell
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 cat /var/lib/dpkg/info/bandit7.password
@@ -64,43 +64,43 @@ cat /var/lib/dpkg/info/bandit7.password
 **PASSWORD:**   
 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
 
-### LEVEL 7 -> 8
+### LEVEL 7 - 8
 ```shell
 grep 'millionth' data.txt
 ```
 **PASSWORD:**  
 cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
-### LEVEL 8 -> 9
+### LEVEL 8 - 9
 ```shell
 sort data.txt | uniq -u 
 ```
 **PASSWORD:**  
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
-#=== level 9 -> 10 ===#
-```
+### LEVEL 9 - 10
+```shell
 strings data.txt | grep '=' 
 ```
 **PASSWORD:**  
 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
-#=== level 10 -> 11 ===#
-```
+### LEVEL 10 - 11
+```shell
 base64 -d data.txt 
 ```
 **PASSWORD:**  
 IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
-#=== level 11 -> 12 ===#
-```
+### LEVEL 11 - 12
+```shell
 cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' 
 ```
 **PASSWORD:**  
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 
-#=== level 12 -> 13 ===#
-```
+### LEVEL 12 - 13 
+```shell
 mkdir /tmp/benshlom
 xxd -r data.txt > /tmp/benshlom/data.txt
 cd /tmp/benshlom
@@ -111,30 +111,30 @@ rm -r /tmp/benshlom
 **PASSWORD:**  
 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 
-#=== level 13 -> 14 ===#
-```
+### LEVEL 13 - 14
+```shell
 ssh -i sshkey.private bandit14@localhost
 cat /etc/bandit_pass/bandit14
 ```
 **PASSWORD:**  
 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 
-#=== level 14 -> 15 ===#
-```
+### LEVEL 14 - 15
+```shell
 telnet localhost 30000
 ```
 **PASSWORD:**  
 BfMYroe26WYalil77FoDi9qh59eK5xNr
 
-#=== level 15 -> 16 ===#
-```
+### LEVEL 15 - 16 
+```shell
 openssl s_client -connect localhost:30001
 ```
 **PASSWORD:**  
 cluFn7wTiGryunymYOu4RcffSxQluehd
 
-#=== level 16 -> 17 ===#
-```
+### level 16 - 17
+```shell
 nmap -p 31000-32000 -sV localhost
 echo cluFn7wTiGryunymYOu4RcffSxQluehd | openssl s_client -quiet -connect localhost:31790
 ```
