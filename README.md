@@ -11,28 +11,28 @@ START PASSWORD: bandit0
 ssh bandit<level>@bandit.labs.overthewire.org -p 2220
 ```
 
-### LEVEL 0 -> 1
+### LEVEL 0 - 1
 ```shell
 cat readme
 ```
 **PASSWORD:**  
 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 
-### LEVEL 1 -> 2
+### LEVEL 1 - 2
 ```shell
 cat ./-
 ```
 **PASSWORD:**  
 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
-#=== level 2 -> 3 ===#
+### level 2 - 3 
 ```
 cat "spaces in this filename"
-```
+```shell
 **PASSWORD:**  
 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
-#=== level 3 -> 4 ===#
+### LEVEL 3 - 4
 ```
 cat ./inhere/.hidden
 ```
