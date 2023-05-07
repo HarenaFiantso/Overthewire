@@ -1,12 +1,12 @@
-# OVERTHEWIRE
+# OVERTHEWIRE - Fiantso Harena
 
 
-host: [bandit.labs.overthewire.org](bandit.labs.overthewire.org)  
-port: 2220  
-username: bandit<level>  
-start password: bandit0  
-#=== login via ssh ===#
-```
+HOST: [bandit.labs.overthewire.org](bandit.labs.overthewire.org)  
+PORT: 2220  
+USERNAME: bandit<level>  
+START PASSWORD: bandit0  
+###LOGIN WITH SSH
+```shell
 ssh bandit<level>@bandit.labs.overthewire.org -p 2220
 ```
 
