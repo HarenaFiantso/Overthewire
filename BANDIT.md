@@ -1,4 +1,4 @@
-# OVERTHEWIRE - Fiantso Harena
+# BANDIT - Fiantso Harena
 
 
 HOST: [bandit.labs.overthewire.org](bandit.labs.overthewire.org)  
